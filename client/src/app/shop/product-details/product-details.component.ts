@@ -3,8 +3,11 @@ import { Product } from 'src/app/shared/models/product';
 import { ShopService } from '../shop.service';
 import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbService } from 'xng-breadcrumb';
+<<<<<<< HEAD
 import { BasketService } from 'src/app/basket/basket.service';
 import { take } from 'rxjs';
+=======
+>>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
 
 @Component({
   selector: 'app-product-details',
@@ -13,10 +16,15 @@ import { take } from 'rxjs';
 })
 export class ProductDetailsComponent implements OnInit {
 product?: Product;
+<<<<<<< HEAD
 quantity = 1;
 quantityInBasket = 0;
 constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute,
    private bcService: BreadcrumbService, private basketService: BasketService) {
+=======
+constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute,
+   private bcService: BreadcrumbService) {
+>>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
     this.bcService.set('@productDetails', ' ')
    }
 
@@ -29,6 +37,7 @@ constructor(private shopService: ShopService, private activatedRoute: ActivatedR
     if (id) this.shopService.getProduct(+id).subscribe({
       next: product => {
         this.product = product;
+<<<<<<< HEAD
         this.bcService.set('@productDetails', product.name);
         this.basketService.basketSource$.pipe(take(1)).subscribe({
           next: basket => {
@@ -39,6 +48,9 @@ constructor(private shopService: ShopService, private activatedRoute: ActivatedR
             }
           }
         })
+=======
+        this.bcService.set('@productDetails', product.name)
+>>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
       },
       error: error => console.log(error)
       
