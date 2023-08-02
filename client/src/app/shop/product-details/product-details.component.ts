@@ -3,11 +3,8 @@ import { Product } from 'src/app/shared/models/product';
 import { ShopService } from '../shop.service';
 import { ActivatedRoute } from '@angular/router';
 import { BreadcrumbService } from 'xng-breadcrumb';
-<<<<<<< HEAD
 import { BasketService } from 'src/app/basket/basket.service';
 import { take } from 'rxjs';
-=======
->>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
 
 @Component({
   selector: 'app-product-details',
