@@ -16,15 +16,10 @@ import { take } from 'rxjs';
 })
 export class ProductDetailsComponent implements OnInit {
 product?: Product;
-<<<<<<< HEAD
 quantity = 1;
 quantityInBasket = 0;
 constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute,
    private bcService: BreadcrumbService, private basketService: BasketService) {
-=======
-constructor(private shopService: ShopService, private activatedRoute: ActivatedRoute,
-   private bcService: BreadcrumbService) {
->>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
     this.bcService.set('@productDetails', ' ')
    }
 
