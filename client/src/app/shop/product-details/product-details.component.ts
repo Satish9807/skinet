@@ -48,9 +48,6 @@ constructor(private shopService: ShopService, private activatedRoute: ActivatedR
             }
           }
         })
-=======
-        this.bcService.set('@productDetails', product.name)
->>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
       },
       error: error => console.log(error)
       
