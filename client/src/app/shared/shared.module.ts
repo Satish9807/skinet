@@ -25,12 +25,12 @@ import { OrderTotalsComponent } from './order-totals/order-totals.component';
     PaginationModule,
     PagingHeaderComponent,
     PagerComponent,
-<<<<<<< HEAD
+
     CarouselModule,
-    OrderTotalsComponent
-=======
+    OrderTotalsComponent,
+
     CarouselModule
->>>>>>> cd2de5e1567cd5dcf92e0d1fe3549bb6b0466cd6
+
   ]
 })
 export class SharedModule { }
