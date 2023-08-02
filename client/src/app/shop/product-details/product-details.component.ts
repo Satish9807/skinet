@@ -37,7 +37,6 @@ constructor(private shopService: ShopService, private activatedRoute: ActivatedR
     if (id) this.shopService.getProduct(+id).subscribe({
       next: product => {
         this.product = product;
-<<<<<<< HEAD
         this.bcService.set('@productDetails', product.name);
         this.basketService.basketSource$.pipe(take(1)).subscribe({
           next: basket => {
